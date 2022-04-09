@@ -20,8 +20,8 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -34,8 +34,9 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  font: 16px 'AdonisC', sans-serif;
+  font: 16px "AdonisC", sans-serif;
   line-height: 1.2;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -61,9 +62,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -76,48 +77,221 @@ select {
 
 /* fonts */
 @font-face {
-    font-family: 'AdonisC';
-    src: url('./media/fonts/donisC-BoldItalic.woff2') format('woff2'),
-        url('./media/fonts/donisC-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+  font-family: "AdonisC";
+  src: url("./media/fonts/AdonisC-BoldItalic.woff2") format("woff2"),
+    url("./media/fonts/AdonisC-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'AdonisC';
-    src: url('./media/fonts/donisC-Italic.woff2') format('woff2'),
-        url('./media/fonts/donisC-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
+  font-family: "AdonisC";
+  src: url("./media/fonts/AdonisC-Italic.woff2") format("woff2"),
+    url("./media/fonts/AdonisC-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'AdonisC';
-    src: url('./media/fonts/donisC-Bold.woff2') format('woff2'),
-        url('./media/fonts/donisC-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "AdonisC";
+  src: url("./media/fonts/AdonisC-Bold.woff2") format("woff2"),
+    url("./media/fonts/AdonisC-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Ancient Kyiv';
-    src: url('./media/fonts/ncientKyiv.woff2') format('woff2'),
-        url('./media/fonts/ncientKyiv.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Ancient Kyiv";
+  src: url("./media/fonts/AncientKyiv.woff2") format("woff2"),
+    url("./media/fonts/AncientKyiv.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'AdonisC';
-    src: url('./media/fonts/AdonisC.woff2') format('woff2'),
-        url('./media/fonts/donisC.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "AdonisC";
+  src: url("./media/fonts/AdonisC.woff2") format("woff2"),
+    url("./media/fonts/AdonisC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AmoreCTT";
+  src: url("./media/fonts/AmoreC.woff2") format("woff2"),
+    url("./media/fonts/AmoreC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Evangelie";
+  src: url("./media/fonts/Evangelie.woff2") format("woff2"),
+    url("./media/fonts/Evangelie.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SafronModern";
+  src: url("./media/fonts/SafronModern.woff2") format("woff2"),
+    url("./media/fonts/SafronModern.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* end fonts */
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 18px;
+  }
+}
+section{
+    background: #fff;
+}
+
+button{
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    font-family: 'AmoreCTT', sans-serif;
+    cursor: pointer;
+    padding: 0;
+}
+
+h1,
+h2 {
+  font-family: "SafronModern", sans-serif;
+}
+
+@media screen and (min-width: 720px) {
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 2px solid #e4e4e4;
+  background-clip: content-box;
+  background: linear-gradient(to bottom, #005BBB  50%, #FFD500 50%);
+}
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.content-section{
+    padding: 4rem 0;
+}
+
+.decorative-letter{
+      font-family: "Evangelie", sans-serif;
+      font-size: 4em;
+      line-height: 0;
+}
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  background: no-repeat url("./media/img/intro.gif") center / cover;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+     height: 100vh;
+  }
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+  }
+  &__info {
+      display: flex;
+      flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    &-button{
+        position: relative;
+        margin-bottom: 2.2rem;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: calc(50% - 0.8rem);
+            width: 1.6rem;
+            height: 2rem;
+            background: no-repeat url(./media/img/scroll-bar.png) center / contain;
+        }
+    }
+  }
+  &__publish{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      & address{
+        font-style: normal;
+      }
+  }
+}
+
+.start{
+    &__text{
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.paralax-section{ 
+    height: 300px;
+    padding-bottom: 50px;
+    padding-top: 50px; 
+    background: transparent;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.paralax-section video{ 
+    min-width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+.paralax-section h2 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 0.5px black;
+}
