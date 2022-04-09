@@ -12,3 +12,43 @@ anime({
   easing: "easeInOutSine",
   loop: true,
 });
+
+jarallax(document.querySelectorAll(".jarallax"));
+
+const swiper = new Swiper(".bihus__swiper", {
+  loop: true,
+  direction: "vertical",
+  autoplay: {
+    delay: 1500,
+  },
+  speed: 750,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      // will set `translateZ(-400px)` on previous slides
+      translate: [0, 0, -400],
+    },
+    next: {
+      // will set `translateX(100%)` on next slides
+      translate: [0, "100%", 0],
+    },
+  },
+});
+const swiper1 = new Swiper(".sternenko__swiper", {
+  loop: true,
+  autoplay: {
+    delay: 1500,
+  },
+  speed: 750,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      // will set `translateZ(-400px)` on previous slides
+      translate: [0, 0, -400],
+    },
+    next: {
+      // will set `translateX(100%)` on next slides
+      translate: [0, "100%", 0],
+    },
+  },
+});

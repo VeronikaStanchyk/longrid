@@ -170,7 +170,7 @@ button {
   background: none;
   border: none;
   font-size: 1.3rem;
-  font-family: 'AmoreCTT', sans-serif;
+  font-family: "AmoreCTT", sans-serif;
   cursor: pointer;
   padding: 0;
 }
@@ -192,8 +192,8 @@ h2 {
     border-radius: 10px;
     border: 2px solid #e4e4e4;
     background-clip: content-box;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #005BBB), color-stop(50%, #FFD500));
-    background: linear-gradient(to bottom, #005BBB 50%, #FFD500 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #005bbb), color-stop(50%, #ffd500));
+    background: linear-gradient(to bottom, #005bbb 50%, #ffd500 50%);
   }
 }
 
@@ -204,7 +204,7 @@ h2 {
 }
 
 .content-section {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 .decorative-letter {
@@ -257,7 +257,7 @@ h2 {
 }
 
 .intro__info-button::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: calc(50% - 0.8rem);
@@ -305,14 +305,7 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
-
-.paralax-section video {
-  min-width: 100%;
-  min-height: 100%;
-  position: fixed;
-  top: 0;
-  z-index: -999;
+  overflow: hidden;
 }
 
 .paralax-section h2 {
@@ -323,6 +316,12 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-text-stroke: 0.5px black;
+}
+
+@media screen and (max-width: 500px) {
+  .paralax-section h2 {
+    font-size: 3rem;
+  }
 }
 
 .toronto__wrapper {
@@ -350,8 +349,34 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+@media screen and (max-width: 710px) {
+  .toronto__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .toronto__row:nth-child(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .toronto__text {
   width: 45%;
+}
+
+.toronto__text > .decorative-letter {
+  vertical-align: 20px;
+}
+
+@media screen and (max-width: 710px) {
+  .toronto__text {
+    max-width: 500px;
+    width: 100%;
+  }
 }
 
 .toronto__img {
@@ -361,10 +386,290 @@ h2 {
      object-fit: cover;
 }
 
+@media screen and (max-width: 710px) {
+  .toronto__img {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
 .toronto__paragraph {
   max-width: 515px;
   width: 100%;
   margin: 0 auto;
   text-align: justify;
+}
+
+@media screen and (max-width: 710px) {
+  .toronto__paragraph {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+.ukrainer__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ukrainer__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 710px) {
+  .ukrainer__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ukrainer__row:nth-child(2n) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.ukrainer__text {
+  width: 45%;
+}
+
+.ukrainer__text > .decorative-letter {
+  vertical-align: 20px;
+}
+
+@media screen and (max-width: 710px) {
+  .ukrainer__text {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+.ukrainer__img {
+  width: 45%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 710px) {
+  .ukrainer__img {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+.ukrainer__paragraph {
+  max-width: 515px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+@media screen and (max-width: 710px) {
+  .ukrainer__paragraph {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+
+.bihus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bihus__text {
+  max-width: 350px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.bihus__swiper {
+  max-width: 55%;
+  width: 100%;
+  margin-left: 20px;
+  overflow: hidden;
+  max-height: 450px;
+  height: 100%;
+}
+
+.bihus__swiper img {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: "object-fit: cover;";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.shevchenko__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shevchenko__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-right: 1rem;
+}
+
+.shevchenko__info h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.shevchenko__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.shevchenko__img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.history__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.history__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding-left: 1rem;
+}
+
+.history__info h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.history__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.history__img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sternenko__swiper {
+  max-width: 60%;
+  width: 100%;
+  margin-left: 20px;
+  overflow: hidden;
+  max-height: 450px;
+  height: 100%;
+}
+
+.sternenko__swiper img {
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.sternenko__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sternenko__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  padding-left: 1rem;
+}
+
+.sternenko__info h2 {
+  width: 100%;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

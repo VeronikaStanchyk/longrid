@@ -162,17 +162,17 @@ html {
     font-size: 18px;
   }
 }
-section{
-    background: #fff;
+section {
+  background: #fff;
 }
 
-button{
-    background: none;
-    border: none;
-    font-size: 1.3rem;
-    font-family: 'AmoreCTT', sans-serif;
-    cursor: pointer;
-    padding: 0;
+button {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  font-family: "AmoreCTT", sans-serif;
+  cursor: pointer;
+  padding: 0;
 }
 
 h1,
@@ -181,21 +181,21 @@ h2 {
 }
 
 @media screen and (min-width: 720px) {
-*::-webkit-scrollbar {
-  width: 10px;
-}
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
 
-*::-webkit-scrollbar-track {
-  background-color: #e4e4e4;
-  border-radius: 100px;
-}
+  *::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+  }
 
-*::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  border: 2px solid #e4e4e4;
-  background-clip: content-box;
-  background: linear-gradient(to bottom, #005BBB  50%, #FFD500 50%);
-}
+  *::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid #e4e4e4;
+    background-clip: content-box;
+    background: linear-gradient(to bottom, #005bbb 50%, #ffd500 50%);
+  }
 }
 
 .container {
@@ -204,14 +204,14 @@ h2 {
   margin: 0 auto;
 }
 
-.content-section{
-    padding: 5rem 0;
+.content-section {
+  padding: 6rem 0;
 }
 
-.decorative-letter{
-      font-family: "Evangelie", sans-serif;
-      font-size: 4em;
-      line-height: 0;
+.decorative-letter {
+  font-family: "Evangelie", sans-serif;
+  font-size: 4em;
+  line-height: 0;
 }
 
 .intro {
@@ -222,7 +222,7 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-     height: 100vh;
+    height: 100vh;
   }
   &__title {
     width: 100%;
@@ -231,61 +231,55 @@ h2 {
     margin-top: 4rem;
   }
   &__info {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-top: auto;
     margin-bottom: 1rem;
-    &-button{
-        position: relative;
-        margin-bottom: 2rem;
-        &::after{
-            content: '';
-            position: absolute;
-            top: 100%;
-            left: calc(50% - 0.8rem);
-            width: 1.6rem;
-            height: 2rem;
-            background: no-repeat url(./media/img/scroll-bar.png) center / contain;
-        }
-    }
-  }
-  &__publish{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-size: 1.1rem;
-      margin-bottom: 1rem;
-      & address{
-        font-style: normal;
+    &-button {
+      position: relative;
+      margin-bottom: 2rem;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: calc(50% - 0.8rem);
+        width: 1.6rem;
+        height: 2rem;
+        background: no-repeat url(./media/img/scroll-bar.png) center / contain;
       }
+    }
+  }
+  &__publish {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    & address {
+      font-style: normal;
+    }
   }
 }
 
-.start{
-    &__text{
-        max-width: 500px;
-        width: 100%;
-        margin: 0 auto;
-    }
+.start {
+  &__text {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
-.paralax-section{ 
-    height: 300px;
-    padding-bottom: 50px;
-    padding-top: 50px; 
-    background: transparent;
-        display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.paralax-section video{ 
-    min-width: 100%;
-    min-height: 100%;
-    position: fixed;
-    top:0;
-    z-index: -999;
+.paralax-section {
+  height: 300px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 .paralax-section h2 {
   color: #fff;
@@ -295,33 +289,232 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-text-stroke: 0.5px black;
+  @media screen and (max-width: 500px) {
+    font-size: 3rem;
+  }
 }
 
-.toronto{
-    &__wrapper{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+.toronto {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    @media screen and (max-width: 710px) {
+      flex-direction: column;
+      &:nth-child(2n) {
+        flex-direction: column-reverse;
+      }
     }
-    &__row{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 1.5rem;
+  }
+  &__text {
+    width: 45%;
+    & > .decorative-letter {
+      vertical-align: 20px;
     }
-    &__text{
-        width: 45%;
+    @media screen and (max-width: 710px) {
+      max-width: 500px;
+      width: 100%;
     }
-    &__img{
-        width: 45%;
-        height: auto;
-        object-fit: cover;
+  }
+  &__img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    @media screen and (max-width: 710px) {
+      max-width: 500px;
+      width: 100%;
     }
-    &__paragraph{
-        max-width: 515px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: justify;
+  }
+  &__paragraph {
+    max-width: 515px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    @media screen and (max-width: 710px) {
+      max-width: 500px;
+      width: 100%;
     }
+  }
+}
+.ukrainer {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    @media screen and (max-width: 710px) {
+      flex-direction: column;
+      &:nth-child(2n) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  &__text {
+    width: 45%;
+    & > .decorative-letter {
+      vertical-align: 20px;
+    }
+    @media screen and (max-width: 710px) {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+  &__img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+    @media screen and (max-width: 710px) {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+  &__paragraph {
+    max-width: 515px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: justify;
+    @media screen and (max-width: 710px) {
+      max-width: 500px;
+      width: 100%;
+    }
+  }
+}
+
+.bihus {
+  display: flex;
+  align-items: center;
+  &__text {
+    max-width: 350px;
+    width: 100%;
+    margin-left: auto;
+  }
+  &__swiper {
+    max-width: 55%;
+    width: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+    max-height: 450px;
+    height: 100%;
+    & img {
+      height: auto;
+      object-fit: cover;
+      cursor: grab;
+    }
+  }
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  /* support for plugin https://github.com/bfred-it/object-fit-images */
+  font-family: "object-fit: cover;";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.shevchenko {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 0 0 50%;
+    padding-right: 1rem;
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__img {
+    display: flex;
+    flex: 0 0 50%;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+.history {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 0 0 50%;
+    padding-left: 1rem;
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__img {
+    display: flex;
+    flex: 0 0 50%;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
+
+.sternenko__swiper{
+    max-width: 60%;
+    width: 100%;
+    margin-left: 20px;
+    overflow: hidden;
+    max-height: 450px;
+    height: 100%;
+    & img {
+      height: auto;
+      object-fit: cover;
+      cursor: grab;
+    }
+}
+
+
+.sternenko {
+  &__wrapper {
+    width: 100%;
+    display: flex;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 0 0 40%;
+    padding-left: 1rem;
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+  }
 }
