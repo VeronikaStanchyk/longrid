@@ -3,7 +3,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -36,10 +36,9 @@ html,
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  font: 16px "AdonisC", sans-serif;
+  font-family: "AdonisC", sans-serif;
   line-height: 1.2;
   overflow-x: hidden;
-  width: 100vw;
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,11 +70,11 @@ select {
   *::before,
   *::after {
     -webkit-animation-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
     -webkit-animation-iteration-count: 1 !important;
-    animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     -webkit-transition-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -83,8 +82,7 @@ select {
 /* fonts */
 @font-face {
   font-family: "AdonisC";
-  src: url("./media/fonts/AdonisC-BoldItalic.woff2") format("woff2"),
-    url("./media/fonts/AdonisC-BoldItalic.woff") format("woff");
+  src: url("./media/fonts/AdonisC-BoldItalic.woff2") format("woff2"), url("./media/fonts/AdonisC-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -92,8 +90,7 @@ select {
 
 @font-face {
   font-family: "AdonisC";
-  src: url("./media/fonts/AdonisC-Italic.woff2") format("woff2"),
-    url("./media/fonts/AdonisC-Italic.woff") format("woff");
+  src: url("./media/fonts/AdonisC-Italic.woff2") format("woff2"), url("./media/fonts/AdonisC-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -101,8 +98,7 @@ select {
 
 @font-face {
   font-family: "AdonisC";
-  src: url("./media/fonts/AdonisC-Bold.woff2") format("woff2"),
-    url("./media/fonts/AdonisC-Bold.woff") format("woff");
+  src: url("./media/fonts/AdonisC-Bold.woff2") format("woff2"), url("./media/fonts/AdonisC-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -110,8 +106,7 @@ select {
 
 @font-face {
   font-family: "Ancient Kyiv";
-  src: url("./media/fonts/AncientKyiv.woff2") format("woff2"),
-    url("./media/fonts/AncientKyiv.woff") format("woff");
+  src: url("./media/fonts/AncientKyiv.woff2") format("woff2"), url("./media/fonts/AncientKyiv.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -119,8 +114,7 @@ select {
 
 @font-face {
   font-family: "AdonisC";
-  src: url("./media/fonts/AdonisC.woff2") format("woff2"),
-    url("./media/fonts/AdonisC.woff") format("woff");
+  src: url("./media/fonts/AdonisC.woff2") format("woff2"), url("./media/fonts/AdonisC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -128,8 +122,7 @@ select {
 
 @font-face {
   font-family: "AmoreCTT";
-  src: url("./media/fonts/AmoreC.woff2") format("woff2"),
-    url("./media/fonts/AmoreC.woff") format("woff");
+  src: url("./media/fonts/AmoreC.woff2") format("woff2"), url("./media/fonts/AmoreC.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -137,8 +130,7 @@ select {
 
 @font-face {
   font-family: "Evangelie";
-  src: url("./media/fonts/Evangelie.woff2") format("woff2"),
-    url("./media/fonts/Evangelie.woff") format("woff");
+  src: url("./media/fonts/Evangelie.woff2") format("woff2"), url("./media/fonts/Evangelie.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -146,8 +138,7 @@ select {
 
 @font-face {
   font-family: "SafronModern";
-  src: url("./media/fonts/SafronModern.woff2") format("woff2"),
-    url("./media/fonts/SafronModern.woff") format("woff");
+  src: url("./media/fonts/SafronModern.woff2") format("woff2"), url("./media/fonts/SafronModern.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -179,7 +170,7 @@ button {
   background: none;
   border: none;
   font-size: 1.3rem;
-  font-family: "AmoreCTT", sans-serif;
+  font-family: 'AmoreCTT', sans-serif;
   cursor: pointer;
   padding: 0;
 }
@@ -201,14 +192,8 @@ h2 {
     border-radius: 10px;
     border: 2px solid #e4e4e4;
     background-clip: content-box;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      color-stop(50%, #005bbb),
-      color-stop(50%, #ffd500)
-    );
-    background: linear-gradient(to bottom, #005bbb 50%, #ffd500 50%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #005BBB), color-stop(50%, #FFD500));
+    background: linear-gradient(to bottom, #005BBB 50%, #FFD500 50%);
   }
 }
 
@@ -219,7 +204,7 @@ h2 {
 }
 
 .content-section {
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .decorative-letter {
@@ -240,8 +225,8 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100vh;
 }
@@ -250,7 +235,7 @@ h2 {
   width: 100%;
   text-align: center;
   font-size: 2.5rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .intro__info {
@@ -259,20 +244,20 @@ h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   margin-top: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .intro__info-button {
   position: relative;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2rem;
 }
 
 .intro__info-button::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: calc(50% - 0.8rem);
@@ -286,11 +271,11 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1.1rem;
   margin-bottom: 1rem;
 }
@@ -314,17 +299,17 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
 .paralax-section video {
   min-width: 100%;
-  height: 100%;
+  min-height: 100%;
   position: fixed;
   top: 0;
   z-index: -999;
@@ -338,5 +323,48 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-text-stroke: 0.5px black;
+}
+
+.toronto__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.toronto__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.toronto__text {
+  width: 45%;
+}
+
+.toronto__img {
+  width: 45%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.toronto__paragraph {
+  max-width: 515px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
