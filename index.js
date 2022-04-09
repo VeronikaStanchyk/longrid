@@ -52,3 +52,21 @@ const swiper1 = new Swiper(".sternenko__swiper", {
     },
   },
 });
+const swiper2 = new Swiper(".ragulivna__swiper", {
+  loop: true,
+  autoplay: {
+    delay: 1500,
+  },
+  speed: 750,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      // will set `translateZ(-400px)` on previous slides
+      translate: ["100%", 0, -500],
+    },
+    next: {
+      // will set `translateX(100%)` on next slides
+      translate: [0, "100%", 0],
+    },
+  },
+});
