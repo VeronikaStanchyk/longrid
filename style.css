@@ -832,14 +832,14 @@ h2 {
 
 #bag .history__img {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
 }
 
 #bag .history__info {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
 }
 
 #bag .history__wrapper {
