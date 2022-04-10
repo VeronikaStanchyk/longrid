@@ -206,6 +206,9 @@ h2 {
 
 .content-section {
   padding: 6rem 0;
+   @media screen and (max-width: 600px) {
+         padding: 3rem 0;
+    }
 }
 
 .decorative-letter {
@@ -328,6 +331,7 @@ h2 {
     height: auto;
     object-fit: cover;
     @media screen and (max-width: 710px) {
+      padding-top: 2rem;
       max-width: 500px;
       width: 100%;
     }
@@ -377,6 +381,7 @@ h2 {
     height: auto;
     object-fit: cover;
     @media screen and (max-width: 710px) {
+            padding-top: 2rem;
       max-width: 500px;
       width: 100%;
     }
@@ -396,6 +401,9 @@ h2 {
 .bihus {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
   &__text {
     max-width: 350px;
     width: 100%;
@@ -408,6 +416,11 @@ h2 {
     overflow: hidden;
     max-height: 450px;
     height: 100%;
+      @media screen and (max-width: 600px) {
+        padding-top: 2rem;
+      max-width: 100%;
+      margin: 0;
+    }
     & img {
       height: auto;
       object-fit: cover;
@@ -436,21 +449,29 @@ h2 {
   &__wrapper {
     width: 100%;
     display: flex;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
   }
   &__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     flex: 0 0 50%;
     padding-right: 1rem;
     h2 {
       width: 100%;
       text-align: center;
+      margin-bottom: 1rem;
     }
   }
   &__img {
     display: flex;
     flex: 0 0 50%;
+    @media screen and (max-width: 600px) {
+        flex: 1 1;
+        margin-top: 2rem;
+    }
     img {
       width: 100%;
       height: auto;
@@ -463,21 +484,28 @@ h2 {
   &__wrapper {
     width: 100%;
     display: flex;
+     @media screen and (max-width: 600px) {
+       flex-direction: column-reverse;
+    }
   }
   &__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     flex: 0 0 50%;
     padding-left: 1rem;
     h2 {
       width: 100%;
       text-align: center;
+      margin-bottom: 1rem;
     }
   }
   &__img {
     display: flex;
     flex: 0 0 50%;
+    @media screen and (max-width: 600px) {
+       margin-top: 2rem;
+    }
     img {
       width: 100%;
       height: auto;
@@ -493,6 +521,11 @@ h2 {
     overflow: hidden;
     max-height: 450px;
     height: 100%;
+     @media screen and (max-width: 600px) {
+         max-width: 100%;
+         margin: 0;
+         padding-top: 2rem;
+    }
     & img {
       height: auto;
       object-fit: cover;
@@ -505,16 +538,20 @@ h2 {
   &__wrapper {
     width: 100%;
     display: flex;
+       @media screen and (max-width: 600px) {
+         flex-direction: column-reverse;
+    }
   }
   &__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     flex: 0 0 40%;
     padding-left: 1rem;
     h2 {
       width: 100%;
       text-align: center;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -522,16 +559,20 @@ h2 {
   &__wrapper {
     width: 100%;
     display: flex;
+    @media screen and (max-width: 600px) {
+         flex-direction: column;
+    }
   }
   &__info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     flex: 0 0 40%;
     padding-left: 1rem;
     h2 {
       width: 100%;
       text-align: center;
+      margin-bottom: 1rem;
     }
   }
 }
@@ -542,6 +583,11 @@ h2 {
     overflow: hidden;
     max-height: 450px;
     height: 100%;
+     @media screen and (max-width: 600px) {
+         margin: 0;
+         max-width: 100%;
+         padding-top: 2rem;
+    }
     & img {
       height: auto;
       object-fit: cover;
