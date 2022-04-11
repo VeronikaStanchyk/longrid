@@ -627,12 +627,16 @@ h2 {
 
  a {
   position: relative;
-      display: inline-block;
+    display: block;
+    width: fit-content;
     text-decoration: none;
-    color: blue;
+    color: rgb(126, 126, 126);
     font-weight: 800;
-    padding: 0 1px;
+    padding: 3px 10px;
     font-style: italic;
+    font-family: "AmoreCTT", sans-serif;
+    margin: 1rem auto;
+    letter-spacing: 0.5px;
 }
  a:after {
   position: absolute;

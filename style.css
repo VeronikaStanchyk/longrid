@@ -865,12 +865,18 @@ h2 {
 
 a {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   text-decoration: none;
-  color: blue;
+  color: #7e7e7e;
   font-weight: 800;
-  padding: 0 1px;
+  padding: 3px 10px;
   font-style: italic;
+  font-family: "AmoreCTT", sans-serif;
+  margin: 1rem auto;
+  letter-spacing: 0.5px;
 }
 
 a:after {
