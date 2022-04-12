@@ -74,7 +74,7 @@ const swiper2 = new Swiper(".ragulivna__swiper", {
 anime({
   targets: "a",
   scale: [
-    { value: 0.1, easing: "easeOutSine", duration: 500 },
+    { value: 0.6, easing: "easeOutSine", duration: 500 },
     { value: 1, easing: "easeInOutQuad", duration: 1200 },
   ],
   delay: 3000,
